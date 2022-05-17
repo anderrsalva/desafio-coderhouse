@@ -32,6 +32,11 @@ body:before {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-bottom: 0.5px solid white;
+  	background: rgba(255, 255, 255, .5);
+}
+.menu_items a:hover{
+	background: grey;
 }
 
 .logo{
@@ -66,6 +71,9 @@ body:before {
 	font-size: 18px;
 	display: block;
 	color: white;
+}
+.menu_items li a:hover{
+	color: #343434;
 }
 
 .mensaje{
@@ -150,8 +158,8 @@ body:before {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*border-bottom: 0.5px solid white;
-  	background: rgba(255, 255, 255, .5);*/
+	border-bottom: 0.5px solid white;
+  	background: rgba(255, 255, 255, .5);
   	height: 11vh;
   	padding-bottom: 10px;
   	text-decoration: none;
