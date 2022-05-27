@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito+Sans:wght@700&family=Oxygen:wght@300&family=Roboto:wght@300;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito+Sans:wght@700&family=Oxygen:wght@700&family=Roboto:wght@300;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito+Sans:wght@700&family=Oxygen&family=Roboto:wght@300;900&display=swap');
-
-*{
-	margin:  0;
-	padding: 0;
-	box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito+Sans&family=Oxygen&family=Roboto:wght@300;900&display=swap');
 
 body{
 	margin: 0;
@@ -27,53 +22,22 @@ body:before {
 	opacity: 0.2;
 	z-index: -1;
 }
-.contNav{
-	height: 80px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-bottom: 0.5px solid white;
-  	background: rgba(255, 255, 255, .5);
-}
-.menu_items a:hover{
-	background: grey;
+
+.fondo-vacio{
+	background: #BFBABA;
 }
 
-.logo{
-	width: 25%;
-	display: flex;
-	justify-content: center;
+.estilo-nav :hover{ 
+	background-color: #C5C0C0;
 }
-.logo img{
-	width: 400px;
-	height: 200px;
-}
-.menu{
-	width: 75%;
-	padding: 40px 10px;
-}
-.menu_items{
-	display: flex;
-	justify-content: flex-end;
-	list-style: none;
-	margin-right: 30px;
-	font-family: 'Nunito Sans', sans-serif;
+
+.estilo-letter{
+	color: black;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 16px;
 	font-weight: bold;
-}
-.menu_items li{
-	border-radius: 3px;
-	margin: 0 10px;
-}
+	/*text-transform: uppercase;*/
 
-.menu_items li a{
-	padding: 7px 13px;
-	text-decoration: none;
-	font-size: 18px;
-	display: block;
-	color: white;
-}
-.menu_items li a:hover{
-	color: #343434;
 }
 
 .mensaje{
@@ -85,19 +49,20 @@ body:before {
 	justify-content: center;
 	align-items: center;
 }
-.mensaje .titulo{
+ .titulo{
 	font-family: 'Oxygen', sans-serif;
 	font-size: 40px;
 	font-weight: bold;
 	color: #fff;
 }
-.mensaje .subtitulo{
+ .subtitulo{
 	font-size: 20px;
 	font-weight: bold;
 	color: #fff;
 	font-family: 'Oxygen', sans-serif;
 	padding: 10px;
 }
+
 .redSocial{
 	display: flex;
 	align-items: center;
@@ -105,6 +70,7 @@ body:before {
 	width: auto;
 	padding: 38px 15px;
 }
+
 .contenedor{
 	width: 90%;
 	max-width: 1400px;
@@ -153,76 +119,31 @@ body:before {
 	height: 400px;
 	width: 350px;
 }
-#footer {
-	width: auto;
+
+#footer{
+	border-bottom: 0.3px solid white;
+  	background: rgba(255, 255, 255, .9);
+  	height: 10vh;
+  	padding-bottom:10px;
+  	width: auto;
+}
+
+.card-style{
+	width: 400px;
+	margin: 90px;
+}
+
+.cont_titulo{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-bottom: 0.5px solid white;
-  	background: rgba(255, 255, 255, .5);
-  	height: 11vh;
-  	padding-bottom: 10px;
-  	text-decoration: none;
-  	color: black;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: #fff;;
+	margin: 10px;
 }
 
-
-@media all and (max-width: 768px){
-	.contNav{
-		display: flex;
-		flex-direction: column;
-		justify-content: start;
-		align-items: center;
-		height: 40%;
-		width: 100%;
-	}
-	
-	.menu_items{
-		flex-direction: column;
-		list-style: none;
-		font-family: 'Nunito Sans', sans-serif;
-		font-weight: bold;
-	}
-
-	.mensaje{
-		height: 50px;
-		width: 100%;
-		padding: 60px;
-	}
-
-	.redSocial{
-		height: 30%;
-		width: 100%;
-	}
-
-	#footer{
-		height: 30%;
-		width: 100%;
-	}
-
-	.contenedor{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.contenedor-items{
-		width: 350px;
-		height: 1000px;
-	}
-
-	.textos{
-		height: 250px;
-	}
-
-	.contenedor-imagen {
-		width: 350px;
-		height:500px;
-		display: flex;
-		flex-direction: column;
-		justify-content: end;
-		align-items: center;
-	}
-
+.carousel-img{
+	width: 1500px;
 }
