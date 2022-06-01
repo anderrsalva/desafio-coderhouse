@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito+Sans:wght@700&family=Oxygen:wght@300&family=Roboto:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito+Sans:wght@700&family=Oxygen:wght@700&family=Roboto:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito+Sans:wght@700&family=Oxygen&family=Roboto:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito+Sans&family=Oxygen&family=Roboto:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito+Sans&family=Oxygen&family=Roboto&display=swap');
+
+/*Aplicamos SASS en el Home*/
+
+body{
+	margin: 0;
+	background-image: url(../assets/cxv.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	&::before{
+				width: 100%;
+				min-height: 100vh;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: linear-gradient(90deg, #8b9190, #303637);
+				opacity: 0.2;
+	}
+}
+
+
+.estilo-nav{
+			&:hover{ 
+						background-color: #F2F2F2;
+			}
+}
+
+.estilo-letter{
+	color: black;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.card-reuniones{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	gap: 150px;
+}
+.boton-reu{
+	width: 300px;
+	height: 120px;
+	border-radius: 15px;
+	border-bottom: 0.5px solid white;
+	overflow: hidden;
+	cursor: default;
+	transition: all 400ms ease;
+			&:hover{
+					box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.4);
+					transform: translatey(4%);
+			}	
+}
+
+.mensaje{
+		width: auto;
+		padding: 35px 50px;
+		height: 47vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		align-items:center ;
+		.titulo{
+					font-family: 'Oxygen', sans-serif;
+					font-size: 40px;
+					font-weight: bold;
+					color: #fff;
+					padding: 10px;
+		}
+				.subtitulo{
+							font-size: 20px;
+							font-weight: bold;
+							color: #fff;
+							font-family: 'Oxygen', sans-serif;
+							padding: 10px;
+
+				}
+}
+
+.redSocial{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: auto;
+			padding: 38px 15px;
+			height: 130px;
+			transition: all .4s ease-in-out;
+			a{
+				&:hover{
+							transform: scale(1.2);
+				}	
+			}
+			
+}
+
+#footer{
+	border-bottom: 0.5px solid white;
+  	background: rgba(255, 255, 255, 1.5);
+  	height: 14vh;
+  	width: auto;
+}
+
+/*CSS - Falta agregar Sintaxis de SASS*/
+
+.contenedor{
+	width: 90%;
+	max-width: 1400px;
+	margin: auto;
+	padding: 40px 0;
+	display: grid;
+	column-gap: 40px;
+	row-gap: 15px;
+	grid-template-columns: 3fr 1fr;
+	
+}
+.contenedor-items{
+	display: grid;
+	grid-gap: 25px;
+}
+
+.textos{
+	height: 125px;
+	padding: 10px;
+	border-radius: 20px;
+	border-bottom: 0.5px solid white;
+  	background: rgba(255, 255, 255, .5); 
+  	overflow: hidden;
+	cursor: default;
+	transition: all 400ms ease;	
+}
+.textos:hover{
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+	transform: translate(2%);
+	background: rgba(255, 255, 255, 255);
+}
+.textos .titulo{
+	font-family: 'Oxygen', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+.textos h1{
+	font-family: 'Oxygen', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: black;
+}
+.textos .subtitulo{
+	font-size: 15px;
+	color: black;
+	font-family: 'Oxygen', sans-serif;
+}
+.contenedor-imagen{
+	justify-self: end;
+	align-self: end;
+	overflow: hidden;
+	cursor: default;
+	transition: all 400ms ease;	
+}
+.contenedor-imagen:hover{
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+	transform: translateY(-2%);
+}
+.contenedor-imagen img{
+	border-radius: 30px;
+	height: 400px;
+	width: 350px;
+}
+
+.card-style{
+	width: 400px;
+	margin: 90px;
+	border-radius: 20px;
+	border-bottom: 0.5px solid white;
+	overflow: hidden;
+	cursor: default;
+	transition: all 400ms ease;	
+}
+.card-style:hover{
+	box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.8);
+	transform: translateY(-2%);
+}
+
+.content-desc{
+	margin: 30px;
+	height: 100px;
+	width: auto;
+	border-radius: 15px;
+	border-bottom: 0.5px solid white;
+  	background: rgba(255, 255, 255, .9); 
+  	overflow: hidden;
+	cursor: default;
+	transition: all 400ms ease;	
+}
+
+.content-desc:hover{
+	box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.8);
+	transform: translateY(-2%);
+}
+.descripcion{
+	font-size: 17px;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	padding: 20px;
+}
+
+
+.cont_titulo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: #fff;;
+	margin: 20px;
+}
+
+
